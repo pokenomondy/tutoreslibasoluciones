@@ -2,14 +2,14 @@
 <html>
 <head>
 
-  <base href="https://tutores.libasoluciones.com/">
+  <base href="/">
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Dufy asesorías.">
 
   <meta name="google-signin-client_id" content="350250942752-4i0b7d675tgn61rqij670s91ub8958le.apps.googleusercontent.com"/>
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="dashboard_admin_flutter">
 
@@ -33,20 +33,6 @@
 <body>
 <script src="flutter_bootstrap.js" async></script>
 <script>
-  // Define the serviceWorkerVersion variable
-  var serviceWorkerVersion = '1.0.0'; // Define your version here
-
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/firebase-messaging-sw.js');
-
-      var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-
-      //  ...
-    });
-  }
-</script>
-<script>
   window.addEventListener('load', function(ev) {
     _flutter.loader.load({
       serviceWorker: {
@@ -60,5 +46,6 @@
     });
   });
 </script>
+
 </body>
 </html>
